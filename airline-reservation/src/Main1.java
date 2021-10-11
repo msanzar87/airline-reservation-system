@@ -2,15 +2,22 @@ import java.util.Arrays;
 
 public class Main1 {
     public static void main(String[] args) {
-    Person person = new Person("Munir","USA","1/11/1111",5);
-    person.setName("Billy");
-    System.out.println(person.getName());
+        Person person = new Person();
 
-    if (person.applyPassport() == false){
-        System.out.println("Congrats "+person.getName()+ " passport approved!");
-    }else {
-        System.out.println("We're Sorry "+person.getName());
-    }
+        person.name = "Munir";
+        person.dateOfBirth = "1/11/1111";
+        person.nationality = "USA";
+        person.seatNumber = 5;
+        person.passport = new String[]{person.name, person.nationality, person.dateOfBirth};
+
+        System.out.println(person.name);
+        System.out.println(person.nationality);
+        System.out.println(person.dateOfBirth);
+        System.out.println(Arrays.toString(person.passport));
+        System.out.println(person.seatNumber);
+
     }
 
-}
+    }
+
+
