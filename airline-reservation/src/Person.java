@@ -13,9 +13,15 @@ public class Person {
         this.dateOfBirth = dateOfBirth;
         this.seatNumber = seatNumber;
     }
+    public Person(Person source){
+        this.name = source.name;
+        this.nationality = source.nationality;
+        this.dateOfBirth = source.dateOfBirth;
+        this.seatNumber = source.seatNumber;
+    }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -23,7 +29,7 @@ public class Person {
     }
 
     public String getNationality() {
-        return nationality;
+        return this.nationality;
     }
 
     public void setNationality(String nationality) {
@@ -31,7 +37,7 @@ public class Person {
     }
 
     public String getDateOfBirth() {
-        return dateOfBirth;
+        return this.dateOfBirth;
     }
 
     public void setDateOfBirth(String dateOfBirth) {
@@ -39,7 +45,7 @@ public class Person {
     }
 
     public int getSeatNumber() {
-        return seatNumber;
+        return this.seatNumber;
     }
 
     public void setSeatNumber(int seatNumber) {
