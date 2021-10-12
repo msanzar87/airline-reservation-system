@@ -7,7 +7,7 @@ public class Person {
     int seatNumber;
     String[] passport;
 
-    public Person(String name, String nationality, String dateOfBirth, int seatNumber, String[] passport){
+    public Person(String name, String nationality, String dateOfBirth, int seatNumber){
         this.name = name;
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
@@ -73,10 +73,8 @@ public class Person {
             return true;
         }
     }
-
     public void chooseSeat(){
         this.seatNumber = (int) (Math.random() * 11 + 1);
-
     }
     public String toString() {
         return "Name: " + this.name + "\n"
@@ -86,4 +84,4 @@ public class Person {
                 +  "Passport: " + Arrays.toString(this.passport) + "\n";
     }
 }
-}
+
