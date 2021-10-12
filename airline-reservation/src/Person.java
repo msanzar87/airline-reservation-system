@@ -12,7 +12,7 @@ public class Person {
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
         this.seatNumber = seatNumber;
-        this.passport = Arrays.copyOf(passport,passport.length);
+        this.passport = new String[3];
 
 //        if (nationality.equals("Afghan")){
 //            System.out.println("Come this way please");
@@ -78,4 +78,12 @@ public class Person {
         this.seatNumber = (int) (Math.random() * 11 + 1);
 
     }
+    public String toString() {
+        return "Name: " + this.name + "\n"
+                +  "Nationality: " + this.nationality + "\n"
+                +  "Date of Birth: " + this.dateOfBirth + "\n"
+                +  "Seat Number: " + this.seatNumber + "\n"
+                +  "Passport: " + Arrays.toString(this.passport) + "\n";
+    }
+}
 }
