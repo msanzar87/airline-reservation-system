@@ -11,7 +11,6 @@ public class MainCar {
         for (int i = 0; i < cars.length; i++) {
             dealership.setCar(cars[i], i);
         }
-        dealership.sell(2);
-        System.out.println(dealership.search("Dodge", 11000));
+
     }
 }
