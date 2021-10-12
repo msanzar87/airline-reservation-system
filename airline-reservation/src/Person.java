@@ -5,12 +5,14 @@ public class Person {
     String nationality;
     String dateOfBirth;
     int seatNumber;
+    String[] passport;
 
-    public Person(String name, String nationality, String dateOfBirth, int seatNumber){
+    public Person(String name, String nationality, String dateOfBirth, int seatNumber, String[] passport){
         this.name = name;
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
         this.seatNumber = seatNumber;
+        this.passport = Arrays.copyOf(passport,passport.length);
 
 //        if (nationality.equals("Afghan")){
 //            System.out.println("Come this way please");
@@ -23,6 +25,7 @@ public class Person {
         this.nationality = source.nationality;
         this.dateOfBirth = source.dateOfBirth;
         this.seatNumber = source.seatNumber;
+        this.passport = Arrays.copyOf(source.passport,source.passport.length);
     }
 
     public String getName() {
@@ -55,6 +58,12 @@ public class Person {
 
     public void setSeatNumber(int seatNumber) {
         this.seatNumber = seatNumber;
+    }
+    public String[] getPassport(){
+        return Arrays.copyOf(this.passport,this.passport.length);
+    }
+    public void setPassport(String[] passport){
+        this.passport = new String[] {this.name,this.nationality,this.dateOfBirth};
     }
     public boolean applyPassport(){
         int number = (int) (Math.random() * 2);
