@@ -1,18 +1,15 @@
 public class MainCar {
     public static void main(String[] args) {
-        Car nissan = new Car();
-        nissan.make = "Nissan";
-        nissan.price = 5000;
-        nissan.year = 2020;
-        nissan.color = "red";
+        Car nissan = new Car("Nissan",5000,2020,"red");
 
-        Car dodge = new Car();
-        dodge.make = "Dodge";
-        dodge.price = 11000;
-        dodge.year = 2019;
-        dodge.color = "blue";
+        Car dodge = new Car("Dodge",11000,2019,"blue");
+        nissan.setColor("Jet Black");
+        dodge.setPrice(8000);
 
-        System.out.println(nissan.make);
-        System.out.println(nissan.price);
+        double newPrice = nissan.getPrice() / 2;
+        nissan.setPrice(newPrice);
+        System.out.println(nissan.getPrice());
+        System.out.println(dodge.getPrice());
+
     }
 }
