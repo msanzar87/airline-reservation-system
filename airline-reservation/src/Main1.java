@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Main1 {
     public static void main(String[] args) {
-        Person[] people = new Person[] {
+        Person[] people = new Person[]{
                 new Person("Cleopatra", "Egypt", "69 BC", 1),
                 new Person("Alexander the Great", "Macedon", "356 BC", 2),
                 new Person("Julius Caesar", "Rome", "100 BC", 3),
@@ -19,4 +19,5 @@ public class Main1 {
         for (int i = 0; i < people.length; i++) {
 
         }
+    }
 }
