@@ -3,19 +3,17 @@ import java.util.Arrays;
 public class MainCar {
     public static void main(String[] args) {
         String[] parts = {"tires", "keys"};
-
-        Car nissan = new Car("Nissan",5000,2020,"red",parts);
-        Car dodge = new Car("Dodge",11000,2019,"blue",parts);
-        Car nissan2 = new Car(nissan);
-        nissan.setColor("Jet Black");
-        dodge.setPrice(8000);
-        nissan2.setColor("yellow");
-        nissan2.setParts(new String[] {"tires","filters"});
-        nissan2.setColor("yellow");
-
-        System.out.println(Arrays.toString(nissan2.getParts()));
-
-
-
+        Car[] cars = new Car[]{
+                new Car("Nissan", 5000, 2020, "red", new String[]{"tires", "keys"}),
+                new Car("Dodge", 11000, 2019, "blue", new String[]{"tires", "keys"}),
+                new Car("Nissan", 5000, 2020, "yellow", new String[]{"tires", "filter"}),
+        };
+        Dealership dealership = new Dealership();
+        for (int i = 0; i < cars.length; i++) {
+            dealership.setCar(cars[i], i);
+        }
+        Car newCar = dealership.getCar(1);
+        newCar.setColor("red");
+        System.out.println(newCar);
     }
 }

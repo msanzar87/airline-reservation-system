@@ -55,8 +55,6 @@ private String[] parts;
     public void setParts(String[] parts){
         this.parts = Arrays.copyOf(parts,parts.length);
     }
-
-
     public void setColor(String color) {
         this.color = color;
     }
@@ -64,6 +62,13 @@ private String[] parts;
         System.out.println("You bought the beautiful "+this.year+ " " +this.color
         + " "+this.make+" for "+this.price+".");
         System.out.println("Please drive your car to the nearest exit.\n");
+    }
+    public String toString() {
+        return "Make: " + this.make + "\n"
+                +  "Price: " + this.price + "\n"
+                +  "Year: " + this.year + "\n"
+                +  "Color: " + this.color + "\n"
+                +  "Parts: " + Arrays.toString(parts) + "\n";
     }
 }
 
