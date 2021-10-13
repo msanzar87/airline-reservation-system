@@ -23,6 +23,18 @@ public Item getItem(int row, int spot){
         }
         return false;
     }
+    public String toString(){
+        String temp = "";
+        for (int i = 0; i < items.length; i++) {
+            temp += "\t";
+            for (int j = 0; j < items[i].length; j++) {
+                temp += this.items[i][j].toString();
+            }
+            temp += "\n\n";
+        }
+        temp += "************************************************************";
+        return temp;
+    }
 
 
     }

@@ -37,6 +37,6 @@ public class Item {
         this.quantity = quantity;
     }
     public String toString(){
-        return this.name + ": " + this.price + " ("+this.quantity+")";
+        return "  "+this.name + ": " + this.price + " ("+this.quantity+")";
     }
 }
