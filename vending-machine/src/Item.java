@@ -13,7 +13,6 @@ public class Item {
         this.price = source.price;
         this.quantity = source.quantity;
     }
-
     public String getName() {
         return name;
     }
@@ -38,8 +37,6 @@ public class Item {
         this.quantity = quantity;
     }
     public String toString(){
-    return "Name: " +this.name+
-            " Price: "+this.price+
-            " Quantity: "+this.quantity;
+        return this.name + ": " + this.price + " ("+this.quantity+")";
     }
 }
