@@ -9,9 +9,8 @@ public class MainVM {
                 { new Item("Crush", 1.99, 2) , new Item("C-Cola", 1.49, 2), new Item("Berry", 2.49, 1) }
         };
 Machine machine = new Machine(items);
-Item item = machine.getItems(2,1);
-item.setPrice(2.99);
-machine.setItems(item,2,1);
-        System.out.println(machine.getItems(2,1));
+machine.dispense(0,0);
+machine.dispense(0,0);
+        System.out.println(machine.getItem(0,0));
     }
 }
