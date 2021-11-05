@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/10-Inheritance/10-Inheritance.iml" filepath="$PROJECT_DIR$/10-Inheritance/10-Inheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/CarDealer/CarDealer.iml" filepath="$PROJECT_DIR$/CarDealer/CarDealer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JAVA Practice Workbook.iml" filepath="$PROJECT_DIR$/.idea/JAVA Practice Workbook.iml" />
       <module fileurl="file://$PROJECT_DIR$/airline-reservation/airline-reservation.iml" filepath="$PROJECT_DIR$/airline-reservation/airline-reservation.iml" />
