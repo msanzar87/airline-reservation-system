@@ -39,5 +39,15 @@ assertEquals(84.51, accounts[0].getBalance(),0.01);
     accounts[1].withdraw(100);
     assertEquals(2136.60,accounts[1].getBalance(),0.01);
 }
+@Test
+    public void withdrawalInterest(){
+    accounts[2].withdraw(2434.31);
+    assertEquals(5020.31,accounts[2].getBalance(),0.01);
+}
+@Test
+    public void withdrawalLimit(){
+    accounts[2].withdraw(7463.69);
+assertEquals(2537.31,accounts[2].getBalance(),0.01);
+}
 
 }
