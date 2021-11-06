@@ -24,4 +24,10 @@ public class AccountTests {
 assertEquals(84.51, accounts[0].getBalance(),0.01);
 }
 
+@Test
+    public void overdraft(){
+    accounts[0].withdraw(1534.43);
+    assertEquals(-15.42,accounts[0].getBalance(),0.01);
+}
+
 }
