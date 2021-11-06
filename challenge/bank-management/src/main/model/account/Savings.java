@@ -7,4 +7,14 @@ public class Savings extends Account{
     public Savings(Savings source){
         super(source);
     }
+
+    @Override
+    public void deposit(double amount) {
+
+    }
+
+    @Override
+    public boolean withdraw(double amount) {
+        return false;
+    }
 }
