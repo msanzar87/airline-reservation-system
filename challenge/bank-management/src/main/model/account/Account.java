@@ -1,8 +1,10 @@
 package src.main.model.account;
 
+import src.main.model.account.impl.Taxable;
+
 import java.text.DecimalFormat;
 
-public abstract class Account {
+public abstract class Account implements Taxable {
 private String id;
 private String name;
 private double balance;
@@ -64,6 +66,11 @@ private double balance;
                 "\t" + this.getId() + "" +
                 "\t" + this.getName() + "" +
                 "\t$" + this.getBalance() + "";
+    }
+
+    @Override
+    public void tax(double income) {
+
     }
 }
 
