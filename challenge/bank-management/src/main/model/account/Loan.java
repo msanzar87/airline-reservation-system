@@ -13,6 +13,7 @@ public class Loan extends Account{
 
     @Override
     public void deposit(double amount) {
+        super.setBalance(super.getBalance() - amount);
 
     }
 
@@ -21,7 +22,7 @@ public class Loan extends Account{
         if (super.getBalance() + amount > MAX_DEBT){
             return false;
         }
-        super.setBalance(super.round(super.getBalance() + amount + (amount * interestRate)));
-        return true;
+super.setBalance(super.getBalance() + amount + (amount * interestRate));
+    return true;
     }
 }

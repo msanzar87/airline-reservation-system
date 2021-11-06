@@ -49,5 +49,15 @@ assertEquals(84.51, accounts[0].getBalance(),0.01);
     accounts[2].withdraw(7463.69);
 assertEquals(2537.31,accounts[2].getBalance(),0.01);
 }
+@Test
+    public void deposit(){
+    accounts[0].deposit(5000);
+    assertEquals(6524.51,accounts[0].getBalance(),0.01);
+}
+@Test
+    public void loanDeposit(){
+    accounts[2].deposit(1000);
+    assertEquals(1537.31,accounts[2].getBalance(),0.01);
+}
 
 }
