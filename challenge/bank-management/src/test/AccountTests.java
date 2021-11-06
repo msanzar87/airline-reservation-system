@@ -29,5 +29,10 @@ assertEquals(84.51, accounts[0].getBalance(),0.01);
     accounts[0].withdraw(1534.43);
     assertEquals(-15.42,accounts[0].getBalance(),0.01);
 }
+@Test
+    public void overdraftLimit(){
+    accounts[0].withdraw(1726);
+    assertEquals(1524.51,accounts[0].getBalance(),0.01);
+}
 
 }
