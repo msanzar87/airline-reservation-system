@@ -34,5 +34,10 @@ assertEquals(84.51, accounts[0].getBalance(),0.01);
     accounts[0].withdraw(1726);
     assertEquals(1524.51,accounts[0].getBalance(),0.01);
 }
+@Test
+    public void withdrawalFee(){
+    accounts[1].withdraw(100);
+    assertEquals(2136.60,accounts[1].getBalance(),0.01);
+}
 
 }
