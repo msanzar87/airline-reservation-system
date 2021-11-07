@@ -54,6 +54,7 @@ private double balance;
     }
     public abstract void deposit(double amount);
     public abstract boolean withdraw(double amount);
+    public abstract Account clone();
 
     protected double round(double amount) {
         DecimalFormat formatter = new DecimalFormat("#.##");

@@ -1,18 +1,17 @@
 package src.main;
 
+import src.main.model.account.Account;
 import src.main.model.account.Chequing;
 import src.main.model.account.Loan;
 import src.main.model.account.Savings;
 
 public class Main1 {
     public static void main(String[] args) {
-        Chequing chequing = new Chequing("1","Munir",1000.00);
-        Savings savings = new Savings("2","Buzz",10000.00);
-        Loan loan = new Loan("3","Chris",2000.00);
+        Chequing chequing = new Chequing("f84c43f4-a634-4c57-a644-7602f8840870", "Michael Scott", 1524.51);
+        Account chequingCopy = chequing.clone();
 
-        System.out.println(chequing);
-        System.out.println(savings);
-        System.out.println(loan);
+        Savings savings = new Savings("ce07d7b3-9038-43db-83ae-77fd9c0450c9", "Saul Goodman", 2241.60);
+        Account savingsCopy = savings.clone();
 
 
     }

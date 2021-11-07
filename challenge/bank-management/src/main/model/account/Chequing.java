@@ -18,6 +18,11 @@ public class Chequing extends Account implements Taxable {
     }
 
     @Override
+    public Account clone() {
+        return new Chequing(this);
+    }
+
+    @Override
     public void deposit(double amount) {
         super.setBalance(super.getBalance() + amount);
 
